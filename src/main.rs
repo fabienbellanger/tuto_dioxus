@@ -1,4 +1,7 @@
+mod guide_component;
+
 use dioxus::prelude::*;
+use guide_component::DogApp;
 
 const FAVICON: Asset = asset!("/assets/favicon.ico");
 const MAIN_CSS: Asset = asset!("/assets/main.css");
@@ -14,6 +17,7 @@ fn App() -> Element {
         document::Link { rel: "icon", href: FAVICON }
         document::Link { rel: "stylesheet", href: MAIN_CSS }
         Hero {}
+        DogApp { breed: "test".to_string() }
     }
 }
 
