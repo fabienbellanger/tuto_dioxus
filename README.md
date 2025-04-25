@@ -10,7 +10,7 @@ project/
 ├─ Cargo.toml # The Cargo.toml file defines the dependencies and feature flags for your project
 ```
 
-### Serving Your App
+## Serving Your App
 
 Run the following command in the root of your project to start developing with the default platform:
 
@@ -19,7 +19,25 @@ dx serve
 ```
 
 To run for a different platform, use the `--platform platform` flag. E.g.
+
 ```bash
 dx serve --platform desktop
 ```
 
+## Tailwind CSS
+
+Run for dev:
+
+```bash
+npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/tailwind.css --watch
+
+npm run dev
+```
+
+Build for production:
+
+```bash
+npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/tailwind.css --minify
+
+npm run build
+```
