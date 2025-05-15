@@ -3,15 +3,9 @@ use dioxus::prelude::*;
 #[component]
 pub fn DogApp(breed: String) -> Element {
     rsx! {
-        div {
-            class: "text-gray-100 text-center cursor-pointer",
-            onclick: move |_| {
-                info!("DogApp clicked");
-            },
-            "DogApp: breed = {breed}"
-        }
+        div { class: "text-center", "DogApp: breed = {breed}" }
         button {
-            class: "btn btn-primary",
+            class: "btn btn-soft btn-primary m-2",
             onclick: move |_| {
                 info!("Button clicked");
             },

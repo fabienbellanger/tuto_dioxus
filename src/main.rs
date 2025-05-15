@@ -36,7 +36,7 @@ fn App() -> Element {
         document::Link { rel: "stylesheet", href: MAIN_CSS }
         document::Link { rel: "stylesheet", href: TAILWIND_CSS }
 
-        div { class: "flex flex-col items-center justify-center h-screen p-4 bg-gray-800",
+        div { class: "flex flex-col items-center justify-center h-screen p-4",
 
             DogApp { breed: "bulldog".to_string() }
         }
